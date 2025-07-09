@@ -1,0 +1,1 @@
+InputStream={"entryName":"HLStoYTB1", "profile":"HLS-Youtube", "streamName":"HLStoYTB1", "host":"a.upload.youtube.com/http_upload_hls?cid=eqma-kere-qmak-ereq-make&copy=0&file=", "sendSSL":"true"}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<PushPublishProfiles>
+		<PushPublishProfile>
+			<Name>HLS-Youtube</Name>
+			<Protocol>HTTP</Protocol>
+			<BaseClass>kr.eqmaker.wms.hls.push.youtube.HLStoYTB</BaseClass>
+			<UtilClass></UtilClass>
+			<Implementation>
+			<Name>Cupertino HTTP</Name>
+			</Implementation>
+			<HTTPConfiguration>
+			</HTTPConfiguration>
+		</PushPublishProfile>
+	</PushPublishProfiles>
+</Root>

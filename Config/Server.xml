@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root version="3">
+	<Server>
+		<!-- Properties defined here will be added to the IServer.getProperties() collection -->
+		<Properties>
+			<Property>
+			<Name>pushPublishProfilesCustomFile</Name>
+			<Value>${com.wowza.wms.ConfigHome}/conf/PushPublishProfilesCustom.xml</Value>
+			</Property>
+		</Properties>
+	</Server>
+</Root>
