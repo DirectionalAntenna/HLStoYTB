@@ -4,7 +4,7 @@
 * Add init method to handler classes to set playlistCrossName field correctly
 */
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-// About kr.eqmaker.wms.hls.push.youtube 1.26
+// About kr.eqmaker.wms.hls.push.youtube 1.29
 // This code of the package(kr.eqmaker.wms.hls.push.youtube) Copyright 2025, EQMaker All rights reserved.
 // This code is based on wse-example-pushpublish-hls of Wowza Media Systems, LLC.
 // This code is licensed pursuant to the BSD 3-Clause License.
@@ -147,10 +147,10 @@ public class HLStoYTB extends PushPublishHTTPCupertino
 	}
 
 	@Override
-	public int sendGroupMasterPlaylist(String groupName, PlaylistModel playlist){return 0;}
+	public int sendGroupMasterPlaylist(String groupName, PlaylistModel playlist){return 1;}
 
 	@Override
-	public int sendMasterPlaylist(PlaylistModel playlist){return 0;	}
+	public int sendMasterPlaylist(PlaylistModel playlist){return 1;	}
 
 	@Override
 	public int sendMediaPlaylist(PlaylistModel playlist)
@@ -231,7 +231,7 @@ public class HLStoYTB extends PushPublishHTTPCupertino
 
 	@Override
 	public String getDestionationLogData()
-	{	return "HLStoYTBv1.26 Set target [" + (isSendSSL ? "https://" : "http://") + httpHost +"]";	}
+	{	return "HLStoYTBv1.29 Set target [" + (isSendSSL ? "https://" : "http://") + httpHost +"]";	}
 
 	private int writePlaylist(PlaylistModel playlist, String playlistPath)
 	{
@@ -302,4 +302,5 @@ public class HLStoYTB extends PushPublishHTTPCupertino
 			portStr = ":" + port;
 		return portStr;
 	}
+
 }
